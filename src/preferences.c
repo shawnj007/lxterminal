@@ -477,7 +477,7 @@ void terminal_preferences_dialog(GtkAction * action, LXTerminal * terminal)
     PREF_SETUP_SHORTCUT(ZOOM_OUT_ACCEL, setting->zoom_out_accel)
     PREF_SETUP_SHORTCUT(ZOOM_RESET_ACCEL, setting->zoom_reset_accel)
 
-    gtk_window_set_modal(GTK_WINDOW(GTK_DIALOG(dialog)), FALSE);
+    gtk_window_set_modal(GTK_WINDOW(GTK_DIALOG(dialog)), TRUE);
     gtk_window_set_transient_for(GTK_WINDOW(GTK_DIALOG(dialog)), 
         GTK_WINDOW(terminal->window));
 
